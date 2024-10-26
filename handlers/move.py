@@ -1,6 +1,6 @@
 import random
 from functools import lru_cache 
-from prot import *
+from .prot import *
 
 
 
