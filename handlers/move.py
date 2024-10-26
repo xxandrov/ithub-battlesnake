@@ -26,8 +26,8 @@ def handle_move(game_state: dict) -> dict:
     prot_snakes_body(my_head["x"], my_head["y"], game_state["you"]["body"], is_move_safe)
 
     #не врезаемся в другую змею
-    prot_another_snakes_body(my_head["x"], my_head["y"], game_state["board"]["snakes"][0], is_move_safe, game_state["you"]["length"],
-                             game_state["board"]["snakes"][0]["length"])
+    # prot_another_snakes_body(my_head["x"], my_head["y"], game_state["board"]["snakes"][0], is_move_safe, game_state["you"]["length"],
+    #                          game_state["board"]["snakes"][0]["length"])
 
     
     
@@ -56,8 +56,8 @@ def handle_move(game_state: dict) -> dict:
 
     # TODO: Step 4 - Move towards food instead of random, to regain health
     # food = game_state['board']['food']
-    print(safe_moves)
-    print(f"MOVE {game_state.get('turn', '')}: {next_move}")
+    # print(safe_moves)
+    # print(f"MOVE {game_state.get('turn', '')}: {next_move}")
     return {"move": next_move}
 
 
